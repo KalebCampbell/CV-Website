@@ -1,66 +1,100 @@
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	 
-
-	margin: 0;
+	font-size: 18px;
+	margin: 0px;
+	padding: 0px;
 }
 
-.aboutmeImg{
-	padding: 75px;
-	 background-image: url('images/about.png');
-}
-.header {
-	padding: 200px;
-	text-align: center;
-	/* unsure on the colour */
-	background: #d13e41;
-	color: white;
-	font: sans-serif;
-
-}
-.header h1 {
-	font-size: 100px;
-}
-.navbar {
-	text-align: center;
+/* global */
+.container{
+	width: 80%;
+	margin: auto;
 	overflow: hidden;
+}
+
+
+/* the header */
+header {
 	background-color: #333;
-	padding: 13px;
-	position: sticky;
-	position: -webkit-sticky;
-	top: 0;
-}
-.navbar a {
-	font: sans-serif;
-	color: white;
+	padding: 10px;
 	text-align: center;
-	padding: 16px 35px;
-	text-decoration: none; /* removes underline */
 }
-.navbar a:hover {
-	
+header a {
+	color: #ffffff;
+	text-decoration: none;
+	padding: 10px;
+
+}
+header ul{
+	margin: 0px;
+	padding: 0px;
+}
+header li{
+	display: inline;
+	padding: 15px;
+}
+header a:hover {
 	color: #a5a7aa;
+
 }
-.main {
-	flex: 100%;
+
+
+
+/* main big red area */
+#showcase{
+	min-height: 400px;
+	padding: 100px;
+	text-align: center;
+	background: #d13e41;
+	color: #ffffff;
+}
+#showcase h1 {
+	font-size: 100px;
+	margin-top: 100px;
+	margin-bottom: 50px;
+
+}
+#showcase p {
+	font-size: 16px;
+}
+
+#splitter{
+	background-image: url('images/about.png');
+}
+
+/* where the writing is */
+.content {
 	background-color: white;
 	padding: 100px;
 	text-align: center;
 }
-.footer {
-	padding: 0px;
+
+/* footer */
+footer {
+	padding: 10px;
+	margin-top: 30px;
 	text-align: center;
+	color: #ffffff;
 	background-color: #ddd;
 }
-@media screen and (max-width: 400px){
-	.navbar {
-		float: none;
-		width: 100%;
+/* media queries */
+@media(max-width: 768px){
+	header a{
+		display: none;
+		
+	}
+
 	}
 }
-@media screen and (max-width: 700px){
-	.main {
-		flex-direction: column;
-	}
+
+
+
+
+
+
+
+
+
+
 }
