@@ -1,0 +1,109 @@
+
+html, body {
+  overflow-x: hidden;
+}
+@media only screen and (min-device-width: 400px) {
+.navbar {
+	background-color: #333;
+ 	top: 0;
+ 	left: 0;
+ 	padding-top: 1%;
+ 	padding-bottom: 1%;
+ 	width: 100%;
+ 	position: fixed;
+ 	overflow: hidden;
+ 	text-align: center;
+}
+
+.navbar a{
+	padding: 3%;
+	font: sans-serif;
+	color: white;
+	text-decoration: none;
+	font-family: Helvetica;
+	font-size: 80%;
+}
+
+.navbar a:hover {
+	color: #a2a5aa;
+}
+
+.navbarPhone{
+	visibility: hidden;
+}
+}
+body{
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.header{
+	padding-top: 15vw;
+	padding-bottom: 16.6vw;
+	background-color: #d13e41;
+	font-family: sans-serif;
+	color: white;
+}
+
+.header h1{
+	font-size: 8vw;
+}
+
+.header p{
+	font-color: white;
+}
+
+.aboutMeImg{
+	background-image: url('ABOUTME4.png');
+	background-color: white;
+	padding: 75px;
+}
+@media only screen and (max-device-width: 400px) {
+body{
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+.navbar{
+	visibility: none;
+}
+
+.navbarPhone{
+	position: relative;
+	background-color: green;
+   	margin:0px;
+   	padding: 50px;
+   	display: block;
+   	top: 0;
+
+	 
+}
+
+.header{
+	padding-top: 25vw;
+	padding-bottom: 35vw;
+	background-color: #d13e41;
+	font-family: sans-serif;
+	color: white;
+	width: 100%
+}
+
+.header h1{
+	font-size: 14vw;
+}
+
+.header p{
+	font-color: white;
+	font-size: 3vw;
+}
+
+.aboutMeImg{
+	background-image: url('ABOUTME4.png');
+	background-color: white;
+	padding:75px;
+}
+
+}
